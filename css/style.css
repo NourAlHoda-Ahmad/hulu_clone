@@ -32,16 +32,30 @@ img {
 }
 
 /* Common */
-.small-title{
+.smaller-title {
     font-size: 12px;
     padding-bottom: 8px;
     color: var(--hulu-green);
 }
 
+.bigger-title {
+    font-size: 48px;
+    font-weight: bold;
+    padding-bottom: 25px;
+    color: white;
+}
+
+.common-p{
+    font-size: 16px;
+    color: white;
+}
+
+
 /* Header Section Start */
 .header {
     background-image: url('../assets/images/main.jpeg');
     background-size: cover;
+    /* position: absolute; */
     width: 100vw;
     height: 100vh;
 
@@ -99,7 +113,9 @@ img {
     flex-direction: row;
     flex-wrap: wrap;
 
-    gap: 5px
+    gap: 5px;
+    margin: 20px;
+
 }
 
 .bundle-1,
@@ -198,7 +214,7 @@ a.terms {
     justify-content: center;
     align-items: center;
     /* flex-wrap: wrap; */
-    height: 135px;
+    height: 150px;
     background-color: red;
     /* For browsers that do not support gradients */
     background-image: linear-gradient(0deg, var(--hulu-dark), #31a76e);
@@ -249,7 +265,23 @@ a.terms {
 
 /* Included In All Section Start */
 
+.included-in-all {
 
+    padding: 100px 20px;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--hulu-dark);
+
+}
+
+.included-in-all .included-paragraph {
+    padding: 0px 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 
 
@@ -260,9 +292,9 @@ a.terms {
 /* Media Query for low resolution  Tablets, Ipads */
 @media(max-width: 767px) {
 
-    /*     
     .header {
-        background-size: contain
-    
-    } */
+
+        height: 100%;
+
+    }
 }
