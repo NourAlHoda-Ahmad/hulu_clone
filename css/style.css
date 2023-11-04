@@ -10,10 +10,11 @@
 
 }
 
-.page{
+.page {
     overflow-x: hidden;
 
 }
+
 img {
     object-fit: contain;
     width: 100%;
@@ -24,10 +25,13 @@ img {
     --hulu-green: #1CE783;
     --hulu-grey: #4F4F51;
     --hulu-grey-hover: #36363d;
+    --hulu-dark: #0B0C0F;
+    /* --hulu-dark:rgb(11,12,15); */
+
 
 }
 
-
+/* Header Section Start */
 .header {
     background-image: url('../assets/images/main.jpeg');
     background-size: cover;
@@ -48,12 +52,12 @@ img {
     height: 20px;
     width: 120px;
     margin-left: 15px;
-    
 
-    
+
+
 }
 
-.navbar .navbar-button a{
+.navbar .navbar-button a {
 
     font-size: 14px;
     color: #A8AFBD;
@@ -66,57 +70,62 @@ img {
 
 }
 
-.navbar .navbar-button a:hover{
+.navbar .navbar-button a:hover {
 
     background-color: var(--hulu-grey-hover);
-    
+
 
 }
 
-.header .header-body{
+.header .header-body {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     width: 100vw;
     height: 100vh;
 }
 
-.header .header-body .bundle-container{
+.header .header-body .bundle-container {
     display: flex;
     flex-direction: row;
-    gap:30px
-    
+    flex-wrap: wrap;
+
+    gap: 30px
 }
 
-.bundle-1, .bundle-2{
+.bundle-1,
+.bundle-2 {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+
     color: var(--hulu-green);
     align-items: center;
 
 
 }
 
-.bundle-1 h2{
+.bundle-1 h2 {
     font-size: 12px;
     padding-bottom: 8px;
 
 }
 
-.bundle-2 h2{
+.bundle-2 h2 {
     font-size: 12px;
     padding-bottom: 8px;
 
 }
 
-.streaming-services img{
+.streaming-services img {
     width: 220px;
     padding: 10px;
 
 }
 
-.payment-paragraph{
+.payment-paragraph {
     margin: 16px 0;
     margin-bottom: 30px;
     font-size: 24px;
@@ -128,7 +137,7 @@ img {
 
 
 .bundle-button {
-
+    margin: 0 20px;
     padding: 10px 90px;
     border-radius: 5px;
     background-color: var(--hulu-green);
@@ -139,13 +148,12 @@ img {
 
 .bundle-button:hover {
 
-    background-color: rgba(28,231,131,0.8);
+    background-color: rgba(28, 231, 131, 0.75);
     cursor: pointer;
 }
 
 
-
-.bundle-button a{
+.bundle-button a {
     font-size: 14px;
     color: black;
     text-decoration: none;
@@ -153,45 +161,97 @@ img {
     padding: 10px 18px;
 }
 
-.header-body-links{
+.header-body-links {
     margin-top: 10px;
     display: flex;
+    flex-wrap: wrap;
+
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.header-body-links a{
-   padding: 10px;
-   color: white;
-   font-size: 16px;
+.header-body-links a {
+    padding: 10px;
+    color: white;
+    font-size: 16px;
 
 }
 
-a.terms{
-   font-size: 14px;
+a.terms {
+    font-size: 14px;
+}
+
+/* Header Section End */
+
+
+/* Built Plan Section Start  */
+
+.built-plan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    height: 135px;
+    background-color: red;
+    /* For browsers that do not support gradients */
+    background-image: linear-gradient(0deg, var(--hulu-dark), #31a76e);
+
+}
+
+.built-plan-paragraph {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 35px 20px;
+    margin-bottom: 20px;
+    line-height: 1.32;
+
+}
+
+.built-plan-button {
+    border: 2px solid white;
+    border-radius: 5px;
+    margin: 0px 20px;
+    margin-bottom: 25px;
+    padding: 12px 60px;
+    cursor: pointer;
+    /* transition: 0.3s; */
+}
+
+.built-plan-button a {
+    text-decoration: none;
+    color: white;
+    padding: 22px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.built-plan-button:hover {
+    background-color: #91a099;
+    border: 2px solid #91a099;
+
+}
+
+.built-plan-button:hover a {
+    color: black;
+
 }
 
 
- /* Media Query for low resolution  Tablets, Ipads */ 
- @media(max-width: 767px) { 
-    .navbar {
-        display: flex;
-        flex-direction: column;
-    }
 
-    .header .header-body{
-        display: flex;
-        flex-direction: row;
-        
-    }
+/* Built Plan Section End  */
+
+
+
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media(max-width: 767px) {
+
+    /*     
+    .header {
+        background-size: contain
     
-    .header .header-body .bundle-container{
-        display: flex;
-        flex-direction: column;
-        
-    }
-    
-   
+    } */
 }
-
