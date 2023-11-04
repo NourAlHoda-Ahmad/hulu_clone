@@ -31,6 +31,13 @@ img {
 
 }
 
+/* Common */
+.small-title{
+    font-size: 12px;
+    padding-bottom: 8px;
+    color: var(--hulu-green);
+}
+
 /* Header Section Start */
 .header {
     background-image: url('../assets/images/main.jpeg');
@@ -92,7 +99,7 @@ img {
     flex-direction: row;
     flex-wrap: wrap;
 
-    gap: 30px
+    gap: 5px
 }
 
 .bundle-1,
@@ -101,13 +108,11 @@ img {
     flex-direction: column;
     flex-wrap: wrap;
 
-    color: var(--hulu-green);
     align-items: center;
-
 
 }
 
-.bundle-1 h2 {
+/* .bundle-1 h2 {
     font-size: 12px;
     padding-bottom: 8px;
 
@@ -117,7 +122,7 @@ img {
     font-size: 12px;
     padding-bottom: 8px;
 
-}
+} */
 
 .streaming-services img {
     width: 220px;
@@ -239,10 +244,16 @@ a.terms {
 
 }
 
-
-
 /* Built Plan Section End  */
 
+
+/* Included In All Section Start */
+
+
+
+
+
+/* Included In All Section End */
 
 
 
