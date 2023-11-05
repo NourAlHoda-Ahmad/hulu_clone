@@ -473,9 +473,9 @@ a.terms {
 
 /* Select plan section start */
 .select-plan {
-    padding: 70px 20px;
+    padding: 70px 20px 10px 20px;
     width: 100vw;
-    overflow: hidden;
+    /* overflow: hidden; */
     background-color: var(--hulu-dark);
 }
 
@@ -494,11 +494,12 @@ a.terms {
 }
 
 
-.scroll-table{
+.scroll-table {
     display: block;
     height: 500px;
     overflow-y: scroll;
 }
+
 .scroll-table::-webkit-scrollbar {
     display: none;
 }
@@ -509,7 +510,7 @@ table.table-plans {
     border-collapse: collapse;
     margin-left: auto;
     margin-right: auto;
-    
+
 
 }
 
@@ -523,7 +524,7 @@ tbody tr {
 
 }
 
-.plan-table-footer{
+.plan-table-footer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -534,7 +535,7 @@ tbody tr {
     font-size: 16px;
 }
 
-.plan-table-footer img{  
+.plan-table-footer img {
     width: 30px;
     height: 30px;
     cursor: pointer;
@@ -549,7 +550,7 @@ td {
 
 }
 
-td{
+td {
     font-size: 14px;
 
 }
@@ -564,7 +565,7 @@ td{
 
 .table-plans th:nth-child(1) {
     text-align: center;
-   
+
 
 }
 
@@ -635,8 +636,8 @@ table.table-plans tr:nth-child(n) {
 }
 
 
-.most-popular-badge{
-    padding: 10px 30px ;
+.most-popular-badge {
+    padding: 10px 30px;
     border-radius: 25px;
     background-color: var(--hulu-green);
     color: #16181D;
@@ -645,41 +646,41 @@ table.table-plans tr:nth-child(n) {
 
 
 
-.trial-days{
+.trial-days {
     font-size: 14px;
     color: #BEC0C2;
 }
 
-.second-plan .plan-card .trial-days{
+.second-plan .plan-card .trial-days {
     padding-top: 15px;
 }
 
-.ads-feature{
+.ads-feature {
     font-size: 18px;
 }
 
-.plan-price{
+.plan-price {
     padding: 15px 70px;
     border-radius: 5px;
-    background-color:white;
+    background-color: white;
     transition: 0.2s;
     text-decoration: none;
     color: black;
 }
 
-.plan-price:hover{
-    
-    background-color:rgb(199, 198, 198);
-    
+.plan-price:hover {
+
+    background-color: rgb(199, 198, 198);
+
 }
 
-.plan-disclaimer-comment{
+.plan-disclaimer-comment {
     padding: 5px 0 80px 0;
     font-size: 10px;
 
 }
 
-.scroll-table img{
+.scroll-table img {
     height: 25px;
     width: 20px;
 }
@@ -693,11 +694,98 @@ table.table-plans tr:nth-child(n) {
     height: 1px;
     background: white;
     margin: auto;
-  }
-
-
+}
 
 /* Select plan section end */
+
+
+/* Footer Section start */
+
+footer {
+    
+    background-color: #E8EAED;
+    padding-bottom: 50px;
+   
+
+}
+
+.footer-1-container,
+.footer-2-container {
+    display: flex;
+    padding: 80px 80px 0px 80px;
+    margin: 0px 80px;
+
+    gap: 50px;
+
+    
+}
+
+
+.footer-2-container {
+    flex-direction: column;
+}
+
+footer h3 {
+    font-size: 12px;
+    color: #272C34;
+    padding-bottom: 5px;
+}
+
+footer a {
+    font-size: 14px;
+    color: #586174;
+    text-decoration: none;
+}
+
+.links-container {
+    display: flex;
+    gap: 5px;
+   
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 150px;
+}
+
+hr.solid {
+    border-top: 1px solid #cfcfcf;
+    /* padding-bottom: 20px; */
+}
+
+.social-media-links {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.social-media-links img {
+    height: 20px;
+    width: 20px;
+}
+
+.legal-links{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.legal-links a{
+    font-size: 12px;
+}
+
+.about-ads{
+    display: flex;
+    align-items: center;
+}
+.about-ads img{
+    height: 18px;
+    width: 18px;
+}
+
+/* Footer Section end */
 
 
 
