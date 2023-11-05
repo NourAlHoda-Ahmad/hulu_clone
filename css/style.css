@@ -45,9 +45,14 @@ img {
     color: white;
 }
 
-.common-p{
+.common-p {
     font-size: 16px;
     color: white;
+}
+
+.disclaimer-comment{
+    color: #FFFFFF99;
+    
 }
 
 
@@ -269,7 +274,8 @@ a.terms {
 
     padding: 100px 20px;
     width: 100vw;
-    height: 100vh;
+    /* min-height: 100px; */
+    overflow: hidden;
     background-color: var(--hulu-dark);
 
 }
@@ -283,9 +289,65 @@ a.terms {
     justify-content: center;
 }
 
-
-
 /* Included In All Section End */
+
+
+.categories-card {
+    margin-top: 50px;
+    margin-right: 20px;
+}
+
+
+.cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.category {
+    
+    position: relative;
+    width: 300px;
+    border-radius: 10px;
+    transition: 0.1s;
+
+}
+
+.category:hover {
+
+    border: 4px solid var(--hulu-grey);
+    padding: 5px;
+    /* filter: grayscale(50%); */
+    opacity: 0.4;
+}
+
+
+.category .category-item-image img {
+    border-radius: 10px;
+    opacity: 0.6;
+
+}
+
+.category-info{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    
+}
+
+
+.category-info span{
+    font-size: 12px;
+
+}
+
+.category-info h3{
+    font-size: 20px;
+}
+
 
 
 
@@ -293,8 +355,11 @@ a.terms {
 @media(max-width: 767px) {
 
     .header {
-
         height: 100%;
+    }
 
+
+    .included-in-all .included-paragraph {
+        padding: 0px 60px;
     }
 }
