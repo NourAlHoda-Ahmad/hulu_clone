@@ -41,6 +41,7 @@ img {
 .bigger-title {
     font-size: 48px;
     font-weight: bold;
+    padding-top: 8px ;
     padding-bottom: 25px;
     color: white;
 }
@@ -48,6 +49,8 @@ img {
 .common-p {
     font-size: 16px;
     color: white;
+    line-height: 1.32;
+
 }
 
 .disclaimer-comment {
@@ -56,6 +59,32 @@ img {
     line-height: 1.46;
 
 }
+
+.hulu-button {
+    margin: 0 20px;
+    padding: 10px 90px;
+    border-radius: 5px;
+    background-color: var(--hulu-green);
+    transition: 0.2s;
+
+}
+
+
+.hulu-button:hover {
+
+    background-color: rgba(28, 231, 131, 0.75);
+    cursor: pointer;
+}
+
+
+.hulu-button a {
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 18px;
+}
+
 
 
 /* Header Section Start */
@@ -135,17 +164,6 @@ img {
 
 }
 
-/* .bundle-1 h2 {
-    font-size: 12px;
-    padding-bottom: 8px;
-
-}
-
-.bundle-2 h2 {
-    font-size: 12px;
-    padding-bottom: 8px;
-
-} */
 
 .streaming-services img {
     width: 220px;
@@ -164,30 +182,6 @@ img {
 }
 
 
-.bundle-button {
-    margin: 0 20px;
-    padding: 10px 90px;
-    border-radius: 5px;
-    background-color: var(--hulu-green);
-    transition: 0.3s;
-
-}
-
-
-.bundle-button:hover {
-
-    background-color: rgba(28, 231, 131, 0.75);
-    cursor: pointer;
-}
-
-
-.bundle-button a {
-    font-size: 14px;
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 10px 18px;
-}
 
 .header-body-links {
     margin-top: 10px;
@@ -274,7 +268,7 @@ a.terms {
 
 .included-in-all {
 
-    padding: 100px 20px;
+    padding: 0px 20px;
     width: 100vw;
     /* min-height: 100px; */
     overflow: hidden;
@@ -283,7 +277,7 @@ a.terms {
 }
 
 .included-in-all .included-paragraph {
-    padding: 0px 300px;
+    padding: 100px 250px 0 250px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -350,6 +344,10 @@ a.terms {
     font-size: 20px;
 }
 
+.second.common-p{
+    font-size: 18px;
+}
+
 .included-in-all .disclaimer-comment {
 
     display: flex;
@@ -359,6 +357,38 @@ a.terms {
     padding-top: 15px;
     padding-right: 30px;
 
+}
+
+
+.second.disclaimer-comment {
+    padding: 20px 200px 0 200px;
+    text-align: center;
+
+}
+
+.included-in-all .disclaimer-comment a {
+    color: #FFFFFF99;
+}
+
+
+.included-paragraph .hulu-button {
+    margin: 20px 20px 0 20px;
+    padding: 12px 10px;
+
+}
+
+.view-channel{
+    text-align: center;
+    padding: 30px 0 100px 0;
+    font-size: 16px;
+    color: white;
+}
+
+.view-channel a{
+  
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
 }
 
 /* Included In All Section End */
