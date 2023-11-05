@@ -50,9 +50,11 @@ img {
     color: white;
 }
 
-.disclaimer-comment{
+.disclaimer-comment {
     color: #FFFFFF99;
-    
+    font-size: 8px;
+    line-height: 1.46;
+
 }
 
 
@@ -289,7 +291,6 @@ a.terms {
     justify-content: center;
 }
 
-/* Included In All Section End */
 
 
 .categories-card {
@@ -307,11 +308,12 @@ a.terms {
 }
 
 .category {
-    
+
     position: relative;
     width: 300px;
     border-radius: 10px;
     transition: 0.1s;
+
 
 }
 
@@ -330,25 +332,36 @@ a.terms {
 
 }
 
-.category-info{
+.category-info {
     position: absolute;
     top: 20px;
     left: 20px;
     color: white;
-    
+
 }
 
 
-.category-info span{
+.category-info span {
     font-size: 12px;
 
 }
 
-.category-info h3{
+.category-info h3 {
     font-size: 20px;
 }
 
+.included-in-all .disclaimer-comment {
 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    padding-top: 15px;
+    padding-right: 30px;
+
+}
+
+/* Included In All Section End */
 
 
 /* Media Query for low resolution  Tablets, Ipads */
