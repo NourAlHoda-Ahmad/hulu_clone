@@ -60,7 +60,6 @@ img {
 
 .disclaimer-comment a {
     color: #FFFFFF99;
-
 }
 
 
@@ -75,7 +74,6 @@ img {
 
 
 .hulu-button:hover {
-
     background-color: rgba(28, 231, 131, 0.75);
     cursor: pointer;
 }
@@ -112,13 +110,10 @@ img {
     height: 20px;
     width: 120px;
     margin-left: 15px;
-
-
-
 }
 
-.navbar .navbar-button a {
 
+.navbar .navbar-button a {
     font-size: 14px;
     color: #A8AFBD;
     text-decoration: none;
@@ -130,11 +125,9 @@ img {
 
 }
 
+
 .navbar .navbar-button a:hover {
-
     background-color: var(--hulu-grey-hover);
-
-
 }
 
 .header .header-body {
@@ -151,10 +144,8 @@ img {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
     gap: 5px;
     margin: 20px;
-
 }
 
 .bundle-1,
@@ -162,15 +153,12 @@ img {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-
     align-items: center;
-
 }
 
 .streaming-services img {
     width: 220px;
     padding: 10px;
-
 }
 
 .payment-paragraph {
@@ -183,12 +171,9 @@ img {
     text-align: center;
 }
 
-.bundle-2 
-.payment-paragraph{
-padding-top: 11px;
+.bundle-2 .payment-paragraph {
+    padding-top: 11px;
 }
-
-
 
 .header-body-links {
     margin-top: 10px;
@@ -315,12 +300,12 @@ a.terms {
 
 }
 
-.category img:hover{
+.category img:hover {
     border: 4px solid white;
     padding: 5px;
 }
 
-.category :hover{
+.category :hover {
     opacity: 0.5;
 }
 
@@ -404,7 +389,6 @@ a.terms {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-
 
 }
 
@@ -527,6 +511,8 @@ tbody tr {
     justify-content: center;
     align-items: center;
     gap: 8px;
+    cursor: pointer;
+
 }
 
 .plan-table-footer h2 {
@@ -536,8 +522,6 @@ tbody tr {
 .plan-table-footer img {
     width: 30px;
     height: 30px;
-    cursor: pointer;
-
 }
 
 
@@ -655,7 +639,7 @@ table.table-plans tr:nth-child(n) {
 }
 
 .plan-price {
-    padding: 15px 70px;
+    padding: 12px 65px;
     border-radius: 5px;
     background-color: white;
     transition: 0.2s;
@@ -664,9 +648,7 @@ table.table-plans tr:nth-child(n) {
 }
 
 .plan-price:hover {
-
     background-color: rgb(199, 198, 198);
-
 }
 
 .plan-disclaimer-comment {
@@ -694,10 +676,10 @@ table.table-plans tr:nth-child(n) {
 /* Footer Section start */
 
 footer {
-    
+
     background-color: #E8EAED;
     padding-bottom: 50px;
-   
+
 
 }
 
@@ -706,7 +688,7 @@ footer {
     display: flex;
     padding: 80px 80px 0px 80px;
     margin: 0px 80px;
-    gap: 50px; 
+    gap: 50px;
 }
 
 
@@ -729,7 +711,7 @@ footer a {
 .links-container {
     display: flex;
     gap: 5px;
-   
+
 }
 
 .links {
@@ -754,21 +736,22 @@ hr.solid {
     width: 20px;
 }
 
-.legal-links{
+.legal-links {
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
 }
 
-.legal-links a{
+.legal-links a {
     font-size: 12px;
 }
 
-.about-ads{
+.about-ads {
     display: flex;
     align-items: center;
 }
-.about-ads img{
+
+.about-ads img {
     height: 18px;
     width: 18px;
 }
@@ -787,5 +770,53 @@ hr.solid {
 
     .included-in-all .included-paragraph {
         padding: 0px 60px;
+
+    }
+
+    .second.disclaimer-comment {
+        padding: 10px;
+    }
+
+
+    .spotlight {
+        flex-direction: column;
+        flex-wrap: wrap;
+
+    }
+
+    .spotlight .spotlight-container {
+        padding: 110px;
+        padding-left: 100px;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .spotlight-tab .spotlight-tab-links.active span {
+        padding-bottom: 0px;
+
+    }
+
+    .spotlight-info .common-p {
+        width: 250px;
+    }
+
+    .footer-1-container {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    /* .links {
+        display: none;
+    } */
+
+    .most-popular-badge {
+        padding: 5px;
+
+    }
+
+    .plan-price {
+        font-size: 10px;
+        padding: 10px;
+
     }
 }
