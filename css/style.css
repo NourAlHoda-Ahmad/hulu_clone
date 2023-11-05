@@ -44,7 +44,7 @@ img {
     padding-top: 8px;
     padding-bottom: 25px;
     color: white;
-    
+
 }
 
 .common-p {
@@ -54,7 +54,7 @@ img {
 
 }
 
-.disclaimer-comment{
+.disclaimer-comment {
     color: #FFFFFF99;
     font-size: 8px;
 
@@ -417,8 +417,8 @@ a.terms {
 }
 
 
-.spotlight-tab .spotlight-tab-links{
-    padding:0 40px 10px 0;
+.spotlight-tab .spotlight-tab-links {
+    padding: 0 40px 10px 0;
     background: none;
     font-size: 12px;
     font-weight: bold;
@@ -426,21 +426,21 @@ a.terms {
     cursor: pointer;
 }
 
-.spotlight-tab .spotlight-tab-links.active span{
+.spotlight-tab .spotlight-tab-links.active span {
     padding-bottom: 15px;
     border-bottom: 5px solid white;
     color: white;
 }
 
-.spotlight-tab .spotlight-tab-links:hover span{
-    
+.spotlight-tab .spotlight-tab-links:hover span {
+
     color: rgb(124, 104, 104);
 }
 
 
 
 
-.spotlight-info{
+.spotlight-info {
     padding-top: 35px;
 }
 
@@ -462,21 +462,24 @@ a.terms {
 
 }
 
-.third.disclaimer-comment{
+.third.disclaimer-comment {
     margin-top: 20px;
 }
+
 /* Spotlight Section Start */
 
 
+
+
 /* Select plan section start */
-.select-plan{
+.select-plan {
     padding: 70px 20px;
     width: 100vw;
     overflow: hidden;
     background-color: var(--hulu-dark);
 }
 
-.select-plan-paragraphs{
+.select-plan-paragraphs {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -484,22 +487,21 @@ a.terms {
 
 }
 
-.select-plan-paragraphs p span{
+.select-plan-paragraphs p span {
     font-size: 16px;
     font-weight: bold;
     color: white;
 }
 
-/* .scroll-table{
 
-    height: 100px;
+.scroll-table{
+    display: block;
+    height: 500px;
     overflow-y: scroll;
-
 }
-
-.scroll-table::-webkit-scrollbar{
+.scroll-table::-webkit-scrollbar {
     display: none;
-} */
+}
 
 table.table-plans {
     margin: 35px;
@@ -507,49 +509,194 @@ table.table-plans {
     border-collapse: collapse;
     margin-left: auto;
     margin-right: auto;
-    /* border-top: 1px solid green;
-    border-bottom: 1px solid green; */
-
-}
-
-tbody{
-    display: block;
-    height: 100px;
-    overflow-y: scroll;
-
-}
-tbody::-webkit-scrollbar{
-    display: none;
-} 
-
-thead, tbody tr {
-    display: table;
-}
-
-
-th,td{
-    color: white;
-    padding: 15px;
     
 
 }
 
-table.table-plans tr:nth-child(n){
 
-    border-top: 1px solid green;
-    border-bottom: 1px solid green;
+
+thead,
+tbody tr {
+    width: 75vw;
+    display: table;
+    table-layout: fixed;
+
 }
 
-.plans-toggle{
+.plan-table-footer{
     display: flex;
-    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
 
+.plan-table-footer h2 {
+    font-size: 16px;
+}
+
+.plan-table-footer img{  
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
 
 }
 
-tfoot{
+
+th,
+td {
+    color: white;
+    padding: 30px 5px;
+
+}
+
+td{
+    font-size: 14px;
+
+}
+
+.table-plans td:nth-child(2n) {
     text-align: center;
 }
+
+.table-plans td:nth-child(3n) {
+    text-align: center;
+}
+
+.table-plans th:nth-child(1) {
+    text-align: center;
+   
+
+}
+
+
+table.table-plans tr:nth-child(n) {
+
+    border-top: 1px solid var(--hulu-grey);
+    border-bottom: 1px solid var(--hulu-grey);
+}
+
+.plans-toggle {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    /* align-content:flex-end; */
+    /* margin: 60px; */
+
+}
+
+
+.toggle-plan {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    height: 30px;
+
+}
+
+
+.toggle-tile {
+    font-size: 14px;
+}
+
+.toggle-btn input {
+
+    visibility: hidden;
+}
+
+.toggle-btn span {
+    position: relative;
+    width: 50px;
+    height: 25px;
+    background: #424957;
+    display: block;
+    border-radius: 100px;
+    cursor: pointer;
+
+}
+
+.toggle-btn span:after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border-radius: 90px;
+}
+
+
+.plan-card {
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-content: flex-end;
+}
+
+
+.most-popular-badge{
+    padding: 10px 30px ;
+    border-radius: 25px;
+    background-color: var(--hulu-green);
+    color: #16181D;
+    font-size: 9px;
+}
+
+
+
+.trial-days{
+    font-size: 14px;
+    color: #BEC0C2;
+}
+
+.second-plan .plan-card .trial-days{
+    padding-top: 15px;
+}
+
+.ads-feature{
+    font-size: 18px;
+}
+
+.plan-price{
+    padding: 15px 70px;
+    border-radius: 5px;
+    background-color:white;
+    transition: 0.2s;
+    text-decoration: none;
+    color: black;
+}
+
+.plan-price:hover{
+    
+    background-color:rgb(199, 198, 198);
+    
+}
+
+.plan-disclaimer-comment{
+    padding: 5px 0 80px 0;
+    font-size: 10px;
+
+}
+
+.scroll-table img{
+    height: 25px;
+    width: 20px;
+}
+
+
+/* .info-icon{
+} */
+
+.not-checked {
+    width: 15px;
+    height: 1px;
+    background: white;
+    margin: auto;
+  }
+
+
+
 /* Select plan section end */
 
 
