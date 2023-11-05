@@ -411,7 +411,7 @@ a.terms {
 
 .spotlight .spotlight-container {
     padding: 200px;
-    padding-left: 275px;
+    padding-left: 200px;
     height: 150vh;
     width: 100vw;
 }
@@ -465,10 +465,93 @@ a.terms {
 .third.disclaimer-comment{
     margin-top: 20px;
 }
-
-
-
 /* Spotlight Section Start */
+
+
+/* Select plan section start */
+.select-plan{
+    padding: 70px 20px;
+    width: 100vw;
+    overflow: hidden;
+    background-color: var(--hulu-dark);
+}
+
+.select-plan-paragraphs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.select-plan-paragraphs p span{
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+
+/* .scroll-table{
+
+    height: 100px;
+    overflow-y: scroll;
+
+}
+
+.scroll-table::-webkit-scrollbar{
+    display: none;
+} */
+
+table.table-plans {
+    margin: 35px;
+    padding: 15px;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    /* border-top: 1px solid green;
+    border-bottom: 1px solid green; */
+
+}
+
+tbody{
+    display: block;
+    height: 100px;
+    overflow-y: scroll;
+
+}
+tbody::-webkit-scrollbar{
+    display: none;
+} 
+
+thead, tbody tr {
+    display: table;
+}
+
+
+th,td{
+    color: white;
+    padding: 15px;
+    
+
+}
+
+table.table-plans tr:nth-child(n){
+
+    border-top: 1px solid green;
+    border-bottom: 1px solid green;
+}
+
+.plans-toggle{
+    display: flex;
+    gap: 5px;
+
+
+}
+
+tfoot{
+    text-align: center;
+}
+/* Select plan section end */
+
 
 
 /* Media Query for low resolution  Tablets, Ipads */
