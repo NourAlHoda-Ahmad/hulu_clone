@@ -223,7 +223,6 @@ a.terms {
     /* flex-wrap: wrap; */
     height: 150px;
     background-color: red;
-    /* For browsers that do not support gradients */
     background-image: linear-gradient(0deg, var(--hulu-dark), #31a76e);
 
 }
@@ -283,7 +282,7 @@ a.terms {
 }
 
 .included-in-all .included-paragraph {
-    padding: 100px 250px 0 250px;
+    padding: 100px 350px 0 350px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -321,7 +320,6 @@ a.terms {
 
     border: 4px solid var(--hulu-grey);
     padding: 5px;
-    /* filter: grayscale(50%); */
     opacity: 0.4;
 }
 
@@ -367,7 +365,7 @@ a.terms {
 
 
 .second.disclaimer-comment {
-    padding: 20px 200px 0 200px;
+    padding: 20px 300px 0 300px;
     text-align: center;
 
 }
@@ -381,7 +379,7 @@ a.terms {
 
 .view-channel {
     text-align: center;
-    padding: 30px 0 100px 0;
+    padding: 30px 0 80px 0;
     font-size: 16px;
     color: white;
 }
@@ -395,15 +393,16 @@ a.terms {
 
 /* Included In All Section End */
 
+
+/* Spotlight Section Start */
 .spotlight {
-    background-image: linear-gradient(100deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url('../assets/images/sports-bg.jpeg');
+    background-image: linear-gradient(150deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url('../assets/images/sports-bg.jpeg');
     background-size: cover;
     width: 125vw;
     height: 150vh;
     /* height: 100%; */
 
     display: flex;
-
     justify-content: flex-start;
     align-items: center;
 
@@ -412,8 +411,37 @@ a.terms {
 
 .spotlight .spotlight-container {
     padding: 200px;
+    padding-left: 250px;
     height: 150vh;
     width: 100vw;
+}
+
+
+.spotlight-tab .spotlight-tab-links{
+    padding:0 40px 10px 0;
+    background: none;
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(144, 136, 136);
+    cursor: pointer;
+}
+
+.spotlight-tab .spotlight-tab-links.active span{
+    padding-bottom: 15px;
+    border-bottom: 5px solid white;
+    color: white;
+}
+
+.spotlight-tab .spotlight-tab-links:hover span{
+    
+    color: rgb(124, 104, 104);
+}
+
+
+
+
+.spotlight-info{
+    padding-top: 35px;
 }
 
 .spotlight-info .common-p {
@@ -437,6 +465,11 @@ a.terms {
 .third.disclaimer-comment{
     margin-top: 20px;
 }
+
+
+
+/* Spotlight Section Start */
+
 
 /* Media Query for low resolution  Tablets, Ipads */
 @media(max-width: 767px) {
