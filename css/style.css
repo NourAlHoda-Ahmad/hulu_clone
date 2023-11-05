@@ -95,7 +95,6 @@ img {
 .header {
     background-image: url('../assets/images/banner-background.jpeg');
     background-size: cover;
-    /* position: absolute; */
     width: 100vw;
     height: 100vh;
 
@@ -301,8 +300,8 @@ a.terms {
 .cards-wrapper {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
-    justify-content: center;
+    /* gap: 25px; */
+    justify-content: space-around;
     cursor: pointer;
 }
 
@@ -310,17 +309,19 @@ a.terms {
 
     position: relative;
     width: 300px;
-    border-radius: 10px;
+    border-radius: 15px;
     transition: 0.1s;
 
 
 }
 
-.category:hover {
-
-    border: 4px solid var(--hulu-grey);
+.category img:hover{
+    border: 4px solid white;
     padding: 5px;
-    opacity: 0.4;
+}
+
+.category :hover{
+    opacity: 0.5;
 }
 
 
