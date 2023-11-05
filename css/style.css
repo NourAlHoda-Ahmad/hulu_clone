@@ -398,7 +398,7 @@ a.terms {
 .spotlight {
     background-image: linear-gradient(150deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url('../assets/images/sports-bg.jpeg');
     background-size: cover;
-    width: 125vw;
+    width: 100vw;
     height: 150vh;
     /* height: 100%; */
 
@@ -411,7 +411,7 @@ a.terms {
 
 .spotlight .spotlight-container {
     padding: 200px;
-    padding-left: 250px;
+    padding-left: 275px;
     height: 150vh;
     width: 100vw;
 }
