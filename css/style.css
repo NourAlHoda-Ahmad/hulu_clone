@@ -27,9 +27,6 @@ img {
     --hulu-grey: #4F4F51;
     --hulu-grey-hover: #36363d;
     --hulu-dark: #0B0C0F;
-    /* --hulu-dark:rgb(11,12,15); */
-
-
 }
 
 /* Common */
@@ -96,7 +93,7 @@ img {
 
 /* Header Section Start */
 .header {
-    background-image: url('../assets/images/main.jpeg');
+    background-image: url('../assets/images/banner-background.jpeg');
     background-size: cover;
     /* position: absolute; */
     width: 100vw;
