@@ -41,9 +41,10 @@ img {
 .bigger-title {
     font-size: 48px;
     font-weight: bold;
-    padding-top: 8px ;
+    padding-top: 8px;
     padding-bottom: 25px;
     color: white;
+    
 }
 
 .common-p {
@@ -53,12 +54,17 @@ img {
 
 }
 
-.disclaimer-comment {
+.disclaimer-comment{
     color: #FFFFFF99;
     font-size: 8px;
-    line-height: 1.46;
 
 }
+
+.disclaimer-comment a {
+    color: #FFFFFF99;
+
+}
+
 
 .hulu-button {
     margin: 0 20px;
@@ -344,7 +350,7 @@ a.terms {
     font-size: 20px;
 }
 
-.second.common-p{
+.second.common-p {
     font-size: 18px;
 }
 
@@ -366,10 +372,6 @@ a.terms {
 
 }
 
-.included-in-all .disclaimer-comment a {
-    color: #FFFFFF99;
-}
-
 
 .included-paragraph .hulu-button {
     margin: 20px 20px 0 20px;
@@ -377,15 +379,15 @@ a.terms {
 
 }
 
-.view-channel{
+.view-channel {
     text-align: center;
     padding: 30px 0 100px 0;
     font-size: 16px;
     color: white;
 }
 
-.view-channel a{
-  
+.view-channel a {
+
     font-size: 16px;
     font-weight: bold;
     color: white;
@@ -393,6 +395,48 @@ a.terms {
 
 /* Included In All Section End */
 
+.spotlight {
+    background-image: linear-gradient(100deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url('../assets/images/sports-bg.jpeg');
+    background-size: cover;
+    width: 125vw;
+    height: 150vh;
+    /* height: 100%; */
+
+    display: flex;
+
+    justify-content: flex-start;
+    align-items: center;
+
+
+}
+
+.spotlight .spotlight-container {
+    padding: 200px;
+    height: 150vh;
+    width: 100vw;
+}
+
+.spotlight-info .common-p {
+    width: 500px;
+}
+
+.sports-icons {
+    display: flex;
+}
+
+.sports-icons img {
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin: 25px 25px 15px 0;
+    background-color: white;
+
+}
+
+.third.disclaimer-comment{
+    margin-top: 20px;
+}
 
 /* Media Query for low resolution  Tablets, Ipads */
 @media(max-width: 767px) {
